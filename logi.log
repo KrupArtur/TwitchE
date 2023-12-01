@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-02-21T13:17:07.492821800Z</date>
+  <millis>1645449427492</millis>
+  <nanos>821800</nanos>
+  <sequence>0</sequence>
+  <logger>com.twitche.twitche.Controller.MainController</logger>
+  <level>INFO</level>
+  <class>com.twitche.twitche.Controller.MainController</class>
+  <method>Export</method>
+  <thread>27</thread>
+  <message>export</message>
+</record>
+<record>
+  <date>2022-02-21T13:17:07.503792300Z</date>
+  <millis>1645449427503</millis>
+  <nanos>792300</nanos>
+  <sequence>1</sequence>
+  <logger>com.twitche.twitche.Controller.MainController</logger>
+  <level>INFO</level>
+  <class>com.twitche.twitche.Controller.MainController</class>
+  <method>Export</method>
+  <thread>27</thread>
+  <message>[Button[id=Button1x2, styleClass=button]'Emote']</message>
+</record>
+</log>

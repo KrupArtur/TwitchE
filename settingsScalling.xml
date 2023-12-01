@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="B2">10x10</entry>
+<entry key="B3">448x448</entry>
+<entry key="E0">12x12</entry>
+<entry key="E1">56x56</entry>
+<entry key="E2">112x112</entry>
+<entry key="E3">448x448</entry>
+<entry key="B0">18x18</entry>
+<entry key="B1">36x36</entry>
+</properties>

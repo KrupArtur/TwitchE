@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.twitche.twitche.Controller.SettingsScaling">
+   <bottom>
+      <AnchorPane prefHeight="338.0" prefWidth="371.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane prefHeight="338.0" prefWidth="341.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Scaling">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="298.0" prefWidth="286.0">
+                           <children>
+                              <VBox fx:id="emoteList" layoutX="8.0" layoutY="35.0" prefHeight="239.0" prefWidth="150.0" />
+                              <Label layoutX="8.0" layoutY="1.0" text="Emote">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="177.0" layoutY="2.0" text="Badge">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="addEmote" layoutX="120.0" layoutY="2.0" mnemonicParsing="false" onAction="#addEmote" text="Add" />
+                              <Button fx:id="addBadge" layoutX="288.0" layoutY="2.0" mnemonicParsing="false" onAction="#addEmote" text="Add" />
+                              <Button layoutX="286.0" layoutY="280.0" mnemonicParsing="false" onAction="#save" text="Save" />
+                              <VBox fx:id="badgeList" layoutX="177.0" layoutY="35.0" prefHeight="239.0" prefWidth="159.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab disable="true" text="Type">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

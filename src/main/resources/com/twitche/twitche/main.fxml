@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.twitche.twitche.Controller.MainController">
+   <root>
+       <AnchorPane id="mainWindow" fx:id="mainGrind" prefHeight="813.0" prefWidth="1160.0">
+         <children>
+            <MenuBar layoutX="-1.0" prefHeight="28.0" prefWidth="1165.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open" />
+                        <MenuItem mnemonicParsing="false" onAction="#Export" text="Export " />
+                        <MenuItem mnemonicParsing="false" onAction="#ExportTo" text="Export in Size..." />
+                        <MenuItem mnemonicParsing="false" onAction="#openSettingsScalling" text="Settings" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Calculator">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openCalculator" text="Open" />
+                        <MenuItem mnemonicParsing="false" onAction="#openSettings" text="Settings" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <VBox layoutY="27.0" prefHeight="668.0" prefWidth="1165.0">
+               <children>
+                  <AnchorPane fx:id="mainWindows" onDragDropped="#readFile" onDragOver="#dragOver" prefHeight="663.0" prefWidth="1164.0" style="-fx-background-color: rgb(109,129,150);">
+                     <children>
+                        <VBox id="Box1x1" fx:id="Box1x1" layoutX="52.0" layoutY="74.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button1x1" fx:id="Button1x1" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF1x1" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="135.0" text="1_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box1x2" fx:id="Box1x2" layoutX="234.0" layoutY="73.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button1x2" fx:id="Button1x2" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF1x2" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="2_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box1x3" fx:id="Box1x3" layoutX="416.0" layoutY="74.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button1x3" fx:id="Button1x3" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF1x3" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="3_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box1x4" fx:id="Box1x4" layoutX="598.0" layoutY="74.0" prefHeight="173.0" prefWidth="147.0">
+                           <children>
+                              <Button id="Button1x4" fx:id="Button1x4" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="155.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF1x4" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="145.0" text="4_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box1x5" fx:id="Box1x5" layoutX="780.0" layoutY="73.0" prefHeight="173.0" prefWidth="149.0">
+                           <children>
+                              <Button id="Button1x5" fx:id="Button1x5" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="155.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF1x5" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="5_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box1x6" fx:id="Box1x6" layoutX="963.0" layoutY="74.0" prefHeight="173.0" prefWidth="150.0">
+                           <children>
+                              <Button id="Button1x6" fx:id="Button1x6" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF1x6" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="6_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box2x1" fx:id="Box2x1" layoutX="50.0" layoutY="258.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button2x1" fx:id="Button2x1" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="151.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF2x1" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="7_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box2x2" fx:id="Box2x2" layoutX="234.0" layoutY="257.0" prefHeight="175.0" prefWidth="149.0">
+                           <children>
+                              <Button id="Button2x2" fx:id="Button2x2" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF2x2" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="8_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box2x3" fx:id="Box2x3" layoutX="416.0" layoutY="257.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button2x3" fx:id="Button2x3" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF2x3" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="9_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box2x4" fx:id="Box2x4" layoutX="598.0" layoutY="257.0" prefHeight="173.0" prefWidth="153.0">
+                           <children>
+                              <Button id="Button2x4" fx:id="Button2x4" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="153.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF2x4" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="121.0" text="10_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box2x5" fx:id="Box2x5" layoutX="781.0" layoutY="257.0" prefHeight="173.0" prefWidth="139.0">
+                           <children>
+                              <Button id="Button2x5" fx:id="Button2x5" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF2x5" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="11_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box2x6" fx:id="Box2x6" layoutX="963.0" layoutY="257.0" prefHeight="173.0" prefWidth="147.0">
+                           <children>
+                              <Button id="Button2x6" fx:id="Button2x6" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF2x6" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="12_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box3x1" fx:id="Box3x1" layoutX="52.0" layoutY="438.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button3x1" fx:id="Button3x1" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF3x1" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="13_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box3x2" fx:id="Box3x2" layoutX="234.0" layoutY="438.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button3x2" fx:id="Button3x2" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF3x2" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="14_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box3x3" fx:id="Box3x3" layoutX="416.0" layoutY="438.0" prefHeight="173.0" prefWidth="138.0">
+                           <children>
+                              <Button id="Button3x3" fx:id="Button3x3" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="163.0" prefWidth="150.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF3x3" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="15_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box3x4" fx:id="Box3x4" layoutX="598.0" layoutY="438.0" prefHeight="173.0" prefWidth="150.0">
+                           <children>
+                              <Button id="Button3x4" fx:id="Button3x4" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="149.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF3x4" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="16_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box3x5" fx:id="Box3x5" layoutX="780.0" layoutY="438.0" prefHeight="173.0" prefWidth="150.0">
+                           <children>
+                              <Button id="Button3x5" fx:id="Button3x5" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="151.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF3x5" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="17_" />
+                           </children>
+                        </VBox>
+                        <VBox id="Box3x6" fx:id="Box3x6" layoutX="962.0" layoutY="438.0" prefHeight="173.0" prefWidth="148.0">
+                           <children>
+                              <Button id="Button3x6" fx:id="Button3x6" alignment="TOP_RIGHT" contentDisplay="TOP" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeTo" onMouseClicked="#mouseClicked" prefHeight="148.0" prefWidth="151.0" style="-fx-background-color: rgba(255,255,255, 0.1);" text="None" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" visible="true">
+                                 <font>
+                                    <Font name="System Italic" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="TF3x6" alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="132.0" text="18_" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="571.0" layoutY="625.0" onMouseClicked="#showView" prefHeight="30.0" prefWidth="24.0" text="⮟">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Separator prefHeight="4.0" prefWidth="1165.0" />
+               </children>
+            </VBox>
+            <AnchorPane layoutY="693.0" prefHeight="120.0" prefWidth="1165.0">
+               <children>
+                  <AnchorPane id="Emote" fx:id="Emote" layoutY="-1.0" prefHeight="120.0" prefWidth="1164.0">
+                     <children>
+                        <HBox layoutY="-3.0" prefHeight="125.0" prefWidth="1163.0">
+                           <children>
+                              <AnchorPane prefHeight="125.0" prefWidth="674.0" style="-fx-background-color: #18181B;">
+                                 <children>
+                                    <ImageView fx:id="img1x1" fitHeight="112.0" fitWidth="112.0" layoutX="47.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/3112x112.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img1x3" fitHeight="56.0" fitWidth="56.0" layoutX="169.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/356x56.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img1x5" fitHeight="28.0" fitWidth="28.0" layoutX="235.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/328x28.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img1x2" fitHeight="72.0" fitWidth="72.0" layoutX="273.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/272x72.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img1x4" fitHeight="36.0" fitWidth="36.0" layoutX="355.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/236x36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img1x6" fitHeight="18.0" fitWidth="18.0" layoutX="401.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/218x18.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="120.0" prefWidth="674.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="img2x1" fitHeight="112.0" fitWidth="112.0" layoutX="60.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/3112x112.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img2x3" fitHeight="56.0" fitWidth="56.0" layoutX="182.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/356x56.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img2x5" fitHeight="28.0" fitWidth="28.0" layoutX="248.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/328x28.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img2x2" fitHeight="72.0" fitWidth="72.0" layoutX="286.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/272x72.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img2x4" fitHeight="36.0" fitWidth="36.0" layoutX="368.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/236x36.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="img2x6" fitHeight="18.0" fitWidth="18.0" layoutX="414.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../../../Downloads/Emotki/218x18.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </root>
+</Scene>

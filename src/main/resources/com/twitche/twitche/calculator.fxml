@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.twitche.twitche.Controller.CalculatorController">
+   <center>
+       <AnchorPane prefHeight="228.0" prefWidth="400.0">
+         <children>
+            <AnchorPane fx:id="anchorPaneMain" layoutX="-1.5" layoutY="-2.0">
+               <children>
+                  <GridPane alignment="CENTER" cache="true" gridLinesVisible="true" layoutX="1.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="121.0" prefWidth="407.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="203.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="204.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+               
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Emotes" textAlignment="CENTER" wrappingWidth="204.0390625" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Badges " textAlignment="CENTER" wrappingWidth="201.6953125" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Buys" textAlignment="CENTER" wrappingWidth="201.0390625" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="buysSum" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="201.625" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="buysBadges" alignment="CENTER" onKeyReleased="#writeVaule" prefHeight="25.0" prefWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="buysEmotes" alignment="CENTER" onKeyReleased="#writeVaule" prefHeight="25.0" prefWidth="116.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sum" textAlignment="CENTER" wrappingWidth="200.3359375" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Animated" textAlignment="CENTER" wrappingWidth="201.0390625" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="buysAnimated" alignment="CENTER" onKeyReleased="#writeVaule" prefHeight="25.0" prefWidth="116.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <TextField fx:id="name" layoutX="26.0" layoutY="22.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="326.0" layoutY="194.0" mnemonicParsing="false" onAction="#saveDate" prefHeight="25.0" prefWidth="51.0" text="Save" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
